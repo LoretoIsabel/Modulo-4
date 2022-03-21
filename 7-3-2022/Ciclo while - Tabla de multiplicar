@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class TablaMultiplicar {
+	
+	public static void main(String[] args) {
+		int cont, num, mult;
+		mult=1;
+		Scanner leer = new Scanner(System.in);
+		System.out.println("Tabla de multiplicar de su número");
+
+		System.out.println("Ingrese un número:  ");
+		num = leer.nextInt();
+		cont = 0;
+		
+		while(cont <= 10){
+			cont = cont +1;	
+			mult=cont*num;
+			System.out.println(mult);
+		}
+	}
+}
