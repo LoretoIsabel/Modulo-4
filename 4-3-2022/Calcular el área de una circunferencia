@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+public class Area {
+
+	public static void main(String[] args) {
+		int radio;
+		int area;
+		int pi;
+		Scanner leer = new Scanner(System.in); //para leer por teclado
+		
+		System.out.println("Ingrese valor radio de la circunferencia:  ");
+		radio = leer.nextInt();
+		pi = (int) 3.1415;
+		
+		area = pi*(radio*radio);
+		
+		System.out.println("El área de la circunferencia es: " + area);
+		
+
+	}
+
+}
