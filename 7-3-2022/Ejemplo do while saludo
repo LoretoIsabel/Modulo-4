@@ -1,0 +1,35 @@
+import java.util.Scanner;
+
+public class EjemploSaludo {
+	public static void main(String[] args) {
+				int cont, opcion;
+				Scanner leer = new Scanner(System.in);
+				
+				do {
+					System.out.println("1 para Saludar");
+					System.out.println("2 para Depedir");
+					System.out.println("3 para Reir");
+					System.out.println("4 para Salir del Ciclo");
+					opcion =leer.nextInt();
+					
+					switch(opcion) {
+					case 1:
+						System.out.println("HOLAAAAAA");
+					break;
+					case 2:
+						System.out.println("CHAOOO");
+					break;
+					case 3:
+						System.out.println("JAJAJJAJA");
+					break;
+					case 4:
+						System.out.println("CHAOOO");
+					break;
+					default:	System.out.println("Opción inválida");
+					}}
+				while(opcion != 4);
+	}}
+				
+	
+
+
