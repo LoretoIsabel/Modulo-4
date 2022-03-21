@@ -12,10 +12,10 @@ public class TablaMultiplicar {
 		num = leer.nextInt();
 		cont = 0;
 		
-		while(cont <= 10){
+		while(cont < 10){
 			cont = cont +1;	
 			mult=cont*num;
-			System.out.println(mult);
+			System.out.println(num + "x" +cont+ "="+ mult);
 		}
 	}
 }
