@@ -1,0 +1,108 @@
+import java.util.Scanner;
+
+public class DecisiónSegun {
+
+	public static void main(String[] args) {
+		int dia;
+		int mes;
+		int año;
+		Scanner leer = new Scanner(System.in);
+		
+		System.out.println("Ingrese el día en que nació:  ");
+		dia = leer.nextInt();
+		
+		System.out.println("Ingrese el mes en que nació:  ");
+		mes = leer.nextInt();
+		
+		System.out.println("Ingrese el año en que nació:  ");
+		año = leer.nextInt();
+		
+		switch(mes) {	
+		case 1:
+			if (dia>=20){
+			System.out.println("Usted es Acuario");
+			} 
+			else {
+			System.out.println("Usted es Capricornio");
+			} break;
+		case 2: {
+			if(dia>=20) {	
+			System.out.println("Usted es Piscis");}
+				else {
+			System.out.println("Usted es Acuario");
+			}}break;
+			
+		case 3: {	
+				if (dia>=20) {
+			System.out.println("Usted es Aries");}
+				else{
+			System.out.println("Usted es Piscis");}
+			}break;
+
+		case 4:{
+				if (dia>=20) {
+			System.out.println("Usted es Aries");}
+				else {
+			System.out.println("Usted es Tauro");}
+			}break;
+			
+		case 5:{	
+				if (dia>=20) {
+			System.out.println("Usted es Géminis");}
+				else {
+			System.out.println("Usted es Tauro");}
+			}break;
+			
+		case 6: {
+				if (dia>=20) {
+			System.out.println("Usted es Cáncer");}
+				else {
+			System.out.println("Usted es Géminis");}
+			}break;
+			
+		case 7: {
+				if(dia>=20) {
+			System.out.println("Usted es Leo");}
+				else {
+			System.out.println("Usted es Cáncer");}
+				}break;
+			
+		case 8:{	
+				if(dia >=20) {
+			System.out.println("Usted es Virgo");}
+				else {
+			System.out.println("Usted es Leo");}
+				}break;
+			
+		case 9: {	
+				if (dia>=20) {
+			System.out.println("Usted es Libra");}
+				else {
+			System.out.println("Usted es Virgo");}
+				}break;
+			
+		case 10:{	
+				if(dia>=20) {
+			System.out.println("Usted es Escorpio");}
+				else {
+			System.out.println("Usted es Libra");}
+				}break;
+			
+		case 11: {	
+				if(dia>=20) {
+			System.out.println("Usted es Sagitario");}
+				else {
+			System.out.println("Usted es Escorpio");}
+				}break;
+
+		case 12:{	
+				if(dia>=20) {
+			System.out.println("Usted es Capricornio");}
+				else {
+			System.out.println("Usted es Sagitario");}
+				}break;
+			
+		default:
+				System.out.println("Ingresó mal los datos");
+
+	}}}
