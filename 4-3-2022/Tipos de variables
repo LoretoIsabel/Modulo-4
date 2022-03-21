@@ -1,0 +1,42 @@
+
+public class Variables {
+
+	public static void main(String[] args) {
+		byte a; //Definir Enteros
+		short b;
+		int c;
+		long d;
+		
+		float e; //Definir Reales
+		double f;
+		
+		boolean g; //Definir Lógico
+		char h; //Definir Caracter
+		
+		// conversión implicita
+		b = 9;
+		d = b;
+		System.out.println("El valor de b es: " + b);
+		System.out.println("El valor de d es: " + d);
+		
+		//conversión explícita (casting)
+		//pueden ocurrir pérdidas de información (truncamiento) , ya que sólo toma la parte entera.
+		f = 3.15;
+		c = (int)f;
+		System.out.println("El valor de f es: " + f);
+		System.out.println("El valor de c es: " + c);
+		
+		//reales (float con una f)
+		e = (float)3.14345454432443534653465465;
+		System.out.println("El valor de e es: " + e);
+		
+		//booleanos
+		g = true;
+		System.out.println(g);
+		
+		//caracter
+		h = 40+33;
+		System.out.println(h);
+	}
+
+}
