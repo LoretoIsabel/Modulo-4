@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+public class Ejercicio1 {
+	public static void main(String[] args) {
+	int cont;
+	cont = 0;
+	int acum;
+	acum = 0;
+	Scanner leer = new Scanner(System.in);
+
+	System.out.print("Suma de números del 1 al 100");
+	
+	do {
+		cont++;
+		acum = acum + cont;
+		
+	}
+	while (cont<100);
+	System.out.println();
+	System.out.println(acum);
+
+
+	}
+
+}
