@@ -1,0 +1,14 @@
+import java.util.Scanner;
+
+public class Ejercicio1Para {
+
+	public static void main(String[] args) {
+		int cont, res;
+		res=0;
+		
+		for(cont =1; cont<=100; cont++) {
+			res = res + cont; }			
+			
+		System.out.println("La sumas de 1 a 100 es: " + res);
+	}
+}
