@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+public class ejercicio2 {
+
+	public static void main(String[] args) {
+	int cont;
+	cont=0;
+	int acum;
+	int num;	
+	Scanner leer = new Scanner(System.in);
+
+	System.out.println("Suma de 100 números desde número elegido");
+	System.out.println();
+	System.out.println("Ingrese número de inicio: ");
+	num = leer.nextInt();
+	acum=num;
+	
+	do { cont++;
+	 acum = acum+(num+cont);
+	}
+	 while(cont<100);
+		System.out.println("La suma es: " + acum);
+	}
+	}
+
