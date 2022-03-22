@@ -1,0 +1,20 @@
+
+public class While {
+
+		public static void main(String[] args) {
+			int cont;
+			cont = 0;
+			int acum;
+			acum = 0;
+
+		System.out.print("Suma de números del 1 al 100");
+			
+			while(cont <= 100){
+				acum = acum + cont;
+				cont++;
+			}
+			System.out.println();
+			System.out.println(acum);
+			}
+		}
+
