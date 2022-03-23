@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+public class Ejercicio3 {
+
+	public static void main(String[] args) {
+		int cont;
+		int acum;
+		int num1;
+		int num2;
+		Scanner leer = new Scanner(System.in);
+
+	System.out.println("Suma de números entre dos números elegidos");
+	System.out.println();
+	System.out.println("Ingrese número de inicio: ");
+	num1 = leer.nextInt();
+	System.out.println("Ingrese número de cierre: ");
+	num2 = leer.nextInt();
+	acum = num1;
+	cont=num1;
+	
+	do { cont++;
+	acum = acum+cont;
+	}
+	while (cont < num2);
+	System.out.println("La suma es: " + acum);
+	}
+}
