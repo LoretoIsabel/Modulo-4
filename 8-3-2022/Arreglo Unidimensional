@@ -1,0 +1,86 @@
+import java.util.Scanner;
+
+public class arregloUnidimensional {
+
+	public static void main(String[] args) {
+		Scanner leer = new Scanner(System.in);
+		int n1, n2, n3, n4, n5, total;
+		int cont, x;
+		total=0;
+		cont=0;
+		
+		//forma 1 de declaracion de array
+		int a[] = new int[5];
+		a[0] = 5;
+		a[1] = 90;
+		a[3] = 1000;
+		a[4] = -7;
+		//a[9] = 40; //error de index
+		System.out.println("::: Array a :::");
+		System.out.println("Elemento en la posion 3 de a[]: " + a[3]);
+		System.out.println("Largo de a: " + a.length);
+		//System.out.println("Elemento en la posicion 5 de a[]: " + a[5]); //error de index
+		System.out.println("Elemento en la posion 2 de a[]: " + a[2]);
+		System.out.println();
+		
+		
+		//forma 2 de declaracion de array
+		int b[] = new int[] {5, 90, 33, 1000, -7};
+		System.out.println("::: Array b :::");
+		System.out.println("Elemento en la posion 3 de b[]: " + b[3]);
+		System.out.println("Largo de b: " + b.length);
+		System.out.println();
+		
+		
+		//llenar la forma 1
+		int c[] = new int[5];
+		
+		System.out.println("::: Array c :::");
+		
+		System.out.println("Ingrese elemento para el indice 0 de c[]: ");
+		n1 = leer.nextInt();
+		c[0] = n1;
+		
+		System.out.println("Ingrese elemento para el indice 1 de c[]: ");
+		n2 = leer.nextInt();
+		c[1] = n2;
+		
+		System.out.println("Ingrese elemento para el indice 2 de c[]: ");
+		n3 = leer.nextInt();
+		c[2] = n3;
+		
+		System.out.println("Ingrese elemento para el indice 3 de c[]: ");
+		n4 = leer.nextInt();
+		c[3] = n4;
+		
+		System.out.println("Ingrese elemento para el indice 4 de c[]: ");
+		n5 = leer.nextInt();
+		c[4] = n5;
+		
+		System.out.println("Elemento del indice 3 de c[]" + c[3]);
+		
+		total = c[3] + c[4];
+		System.out.println("La suma del indice 3 + el indice 4: " + total);
+		System.out.println();
+		
+		System.out.println("::: Array d :::");
+		int d[] = new int[5];
+		
+		//for para llenar el array
+		for(int i=0; i<d.length; i++) {
+			System.out.println("Ingrese elemento para el indice " + i);
+			x = leer.nextInt();
+			d[i] = x;
+		}
+		
+		//for para imprimir el array
+		for(int j=0; j<d.length; j++) {
+			System.out.println("d["+j+"] = " + d[j]); //ej: d[0] = 3
+		}
+		
+		System.out.println();
+		
+	}
+
+}
+
