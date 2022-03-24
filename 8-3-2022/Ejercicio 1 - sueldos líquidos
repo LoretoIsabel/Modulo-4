@@ -1,0 +1,36 @@
+import java.util.Scanner;
+public class arreglosSueldo {
+
+	public static void main(String[] args) {
+		Scanner leer = new Scanner(System.in);
+		float sb,sl,sumaSB, sumaSL,promedioSL;
+		float arraysueldos[] = new float[3];
+		int cont, cont2;
+		cont = 0;
+		cont2=0;
+		sumaSB = 0;
+		sumaSL = 0;
+		promedioSL = 0;
+		sl=0;
+		
+		while(cont<arraysueldos.length) {
+			System.out.println("Ingrese su sueldo base: " + (cont+1));
+			sb = leer.nextFloat();
+			sl = sb *0.8f;
+			arraysueldos[cont] =sl;
+			sumaSL = sumaSL + arraysueldos[cont];
+			sumaSB = sumaSB + sb;
+			cont++;
+		}
+		while(cont2<arraysueldos.length) {
+			System.out.println("Sueldos líquidos: " +arraysueldos[cont2]);
+			cont2++;
+		}
+		promedioSL = sumaSL / arraysueldos.length;
+		
+		System.out.println("Suma sueldos base: " + sumaSB);
+		System.out.println("Promedio sueldos líquidos es: " + promedioSL);
+
+	}
+
+}
