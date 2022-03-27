@@ -4,7 +4,7 @@ public class arreglosSueldo {
 	public static void main(String[] args) {
 		Scanner leer = new Scanner(System.in);
 		float sb,sl,sumaSB, sumaSL,promedioSL;
-		float arraysueldos[] = new float[3];
+		float arraysueldos[] = new float[100];
 		int cont, cont2;
 		cont = 0;
 		cont2=0;
