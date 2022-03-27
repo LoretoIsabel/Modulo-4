@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+public class Ejercicio1For {
+
+	public static void main(String[] args) {
+		Scanner leer = new Scanner(System.in);
+		float sb,sl=0,sumaSB=0, sumaSL=0,promedioSL=0;
+		float arraysueldos[] = new float[3];
+		
+		for (int cont=0; cont<arraysueldos.length;cont++) {
+			System.out.println("Ingrese su sueldo base: " + (cont+1));
+			sb = leer.nextFloat();
+			sumaSB = sumaSB + sb;
+			sl = sb *0.8f;
+			arraysueldos[cont] =sl;
+			sumaSL = sumaSL + arraysueldos[cont];
+			promedioSL = sumaSL / arraysueldos.length;
+		}
+		System.out.println("Suma sueldos base: " + sumaSB);
+		System.out.println("Promedio sueldos líquidos es: " + promedioSL);
+			
+		
+		}
+	}
