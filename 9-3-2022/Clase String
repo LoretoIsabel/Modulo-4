@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+public class ClaseString {
+
+	public static void main(String[] args) {
+		Scanner leer = new Scanner(System.in);
+		String palabra;
+		int largo;
+		
+		System.out.println("Ingresar palabra: ");
+		palabra = leer.next();
+		largo = palabra.length();
+		
+		System.out.println("Usten ingresó: " + palabra);
+		System.out.println("Su palabra tiene " + largo + " letras");
+		System.out.println("Letra 1: "+ palabra.charAt(0));
+		System.out.println("Letra 2: "+ palabra.charAt(1));
+		System.out.println("Letra 3: "+ palabra.charAt(2));
+		System.out.println("Letra 4: "+ palabra.charAt(3));
+
+	}
+
+}
