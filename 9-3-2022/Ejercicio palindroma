@@ -1,0 +1,42 @@
+import java.lang.reflect.Array;
+
+import java.util.Scanner;
+
+public class palindroma {
+
+	public static void main(String[] args) {
+		Scanner leer = new Scanner(System.in);
+		char letra, palabra1 = 0, palabra2=0;
+		int num;
+		
+		System.out.println("Crea una palabra palíndroma");
+		System.out.println("Ingresa número de letras de tu palabra");
+		num = leer.nextInt();
+		char arr[] = new char[num];
+		
+		for(int i=0; i<arr.length; i++) {
+			System.out.println("Ingrese letra: " +(i+1));
+			letra = leer.next().charAt(0);
+			arr[i] = letra;
+		}	
+		for(int i=0; i<arr.length; i++) {
+			System.out.print(arr[i]);
+			palabra1 = arr[i];
+		}
+		System.out.println();
+
+		for(int e=arr.length-1; e>=0; e--){
+			System.out.print(arr[e]);
+			palabra2 = arr[e];
+			
+		}
+		System.out.println();
+
+		if(palabra1 == palabra2) {
+			System.out.println("Su palabra es palindroma");
+		}
+		else { System.out.println("Su palabra no es palindroma");
+			
+		}
+	}
+}
