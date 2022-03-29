@@ -1,0 +1,18 @@
+import java.util.Scanner;
+
+public class FuncionSaludarParametro2 {
+
+	public static void main(String[] args) {
+	saludarP2("Ana", "Guzman");
+	saludarP2("Pedro", "López");
+	saludarP2("Manuel", "Soto");
+	saludarP2("Camilo", "Roa");
+	}
+	public static void saludarP2(String nombre, String apellido) {
+		System.out.println("Hola " + nombre +" "+ apellido);
+		}
+		
+	}
+
+	
+
