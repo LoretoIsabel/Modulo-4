@@ -1,0 +1,16 @@
+import java.util.Scanner;
+public class funciones {
+
+	public static void main(String[] args) {
+		saludar();
+		saludarP("Juanito");
+
+	}
+	public static void saludar() {
+		System.out.println("Hola");
+	}
+	public static void saludarP(String nombre) {
+		System.out.println("Hola " + nombre);
+	}
+
+}
