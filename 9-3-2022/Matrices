@@ -1,0 +1,23 @@
+package matrices;
+
+public class matrices {
+
+	public static void main(String[] args) {
+		int ma[][] = new int[3][3];
+		ma[0][0] =1;
+		ma[0][1] =145;
+		ma[0][2] =6;
+		
+		ma[1][0] =99;
+		ma[1][1] =22;
+		ma[1][2] =800;
+		
+		ma[2][0] =9;
+		ma[2][1] =800;
+		ma[2][2] =77;
+		
+		System.out.println(ma[1][1]);
+
+	}
+
+}
