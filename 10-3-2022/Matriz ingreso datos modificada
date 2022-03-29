@@ -1,0 +1,52 @@
+package matrices;
+
+import java.util.Scanner;
+
+public class MatrizIngresoModificada {
+
+	public static void main(String[] args) {
+		Scanner leer= new Scanner(System.in);
+		int ma[][] = new int[3][3];
+		
+		System.out.println("Ingrese valor para 0,0");
+		ma[0][0] = leer.nextInt();
+		
+		System.out.println("Ingrese valor para 0,1");
+		ma[0][1] = leer.nextInt();
+		
+		System.out.println("Ingrese valor para 0,2");
+		ma[0][2] = leer.nextInt();
+		
+		System.out.println("Ingrese valor para 1,0");
+		ma[1][0] = leer.nextInt();
+		
+		System.out.println("Ingrese valor para 1,1");
+		ma[1][1] = leer.nextInt();
+
+		System.out.println("Ingrese valor para 1,2");
+		ma[1][2] = leer.nextInt();
+		
+		System.out.println("Ingrese valor para 2,0");
+		ma[2][0] = leer.nextInt();
+		
+		System.out.println("Ingrese valor para 2,1");
+		ma[2][1] = leer.nextInt();
+		
+		System.out.println("Ingrese valor para 2,2");
+		ma[2][2] = leer.nextInt();
+		
+		System.out.println("Su matriz es: ");
+		System.out.print(ma[0][0]);
+		System.out.print(ma[0][1]);
+		System.out.println(ma[0][2]);
+		System.out.print(ma[1][0]);
+		System.out.print(ma[1][1]);
+		System.out.println(ma[1][2]);
+		System.out.print(ma[2][0]);
+		System.out.print(ma[2][1]);
+		System.out.println(ma[2][2]);
+
+		
+	}
+
+}
