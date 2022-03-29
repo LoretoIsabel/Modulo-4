@@ -1,0 +1,19 @@
+import java.util.Scanner;
+public class FuncionFactorial {
+
+	public static void main(String[] args) {
+		fact(5);
+		fact(2);
+		fact(7);
+		fact(3);
+		fact(4);
+	}
+	public static void fact(int num) {
+		int f;
+		f=1;
+		for(int i=1; i<=num; i++) {
+			f=f * i;
+		}
+		System.out.println("El factorial es: " + f);
+	}
+}
