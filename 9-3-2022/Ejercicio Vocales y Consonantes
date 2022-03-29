@@ -1,0 +1,47 @@
+import java.util.Scanner;
+
+public class ArrayEjercicio2 {
+
+	public static void main(String[] args) {
+		Scanner leer = new Scanner(System.in);
+		String palabra;
+		int largo;
+		int voc=0, con=0, voc2=0, con2=0;
+		
+		System.out.println("Ingresar palabra: ");
+		palabra = leer.next();
+		largo = palabra.length();
+		
+		for(int i=0; i<largo; i++) {
+			if(palabra.charAt(i) =='a' || palabra.charAt(i) =='e'|| palabra.charAt(i) =='i'|| palabra.charAt(i) =='o'|| palabra.charAt(i) =='u') {
+			voc++;
+		}}
+			con = largo - voc;
+		System.out.println("Su palabra tiene " + voc + " vocales");
+		System.out.println("Su palabra tiene " + con + " consonantes");
+		
+		    
+		    char vocales[]= new char[voc];
+		    char consonantes[] = new char[con];
+		    for (int i=0; i<largo; i++) {
+		    	if(palabra.charAt(i) =='a' || palabra.charAt(i) =='e'|| palabra.charAt(i) =='i'|| palabra.charAt(i) =='o'|| palabra.charAt(i) =='u') {
+				vocales[voc2]=palabra.charAt(i);
+						voc2++;}
+		    else {
+		    	consonantes[con2]=palabra.charAt(i);
+		    	con2++;
+				
+		    	}}
+	    	System.out.println("Las vocales de su palabra son: ");
+
+		    for(int i=0; i<vocales.length; i++) {
+		    	System.out.println(vocales[i]);
+
+		    }
+		    System.out.println("Las consonantes de su palabra son: ");
+
+		    for(int i=0; i<consonantes.length; i++) {
+		    	System.out.println(consonantes[i]);
+	}
+	}
+}
