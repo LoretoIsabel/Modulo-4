@@ -1,0 +1,37 @@
+    import java.util.Scanner;
+
+public class palindromaString {
+
+	public static void main(String[] args) {
+		Scanner leer = new Scanner(System.in);
+		String palabra;
+		char letras1 = 0, letras2=0;
+		int largo;
+		
+		System.out.println("Ingresar palabra: ");
+		palabra = leer.next();
+		largo = palabra.length();
+		
+		
+		System.out.println("Usten ingresó: " + palabra);
+		System.out.println("Su palabra tiene " + largo + " letras");
+		
+		for(int i=0; i<largo; i++) {
+			letras1 = palabra.charAt(i);
+			System.out.println(letras1);
+		}
+		System.out.println(" ");
+
+		for(int i=largo-1; i<=largo; i--) {
+			letras2 = palabra.charAt(i);
+			System.out.println(letras2);
+		}
+		
+		if( letras1 == letras2 ) {
+			System.out.println("Su palabra es palindroma");
+		}
+		else { 
+			System.out.println("Su palabra no es palindroma");	
+		}
+	}
+}
