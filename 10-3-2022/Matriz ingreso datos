@@ -1,0 +1,65 @@
+package matrices;
+
+import java.util.Scanner;
+
+public class matricesIngreso {
+
+	public static void main(String[] args) {
+		Scanner leer= new Scanner(System.in);
+		int ma[][] = new int[3][3];
+		int coor00, coor01, coor02;
+		int coor10, coor11, coor12;
+		int coor20, coor21, coor22;
+		
+		System.out.println("Ingrese valor para 0,0");
+		coor00 = leer.nextInt();
+		ma[0][0] = coor00;
+		
+		System.out.println("Ingrese valor para 0,1");
+		coor01 = leer.nextInt();
+		ma[0][1] = coor01;
+		
+		System.out.println("Ingrese valor para 0,2");
+		coor02 = leer.nextInt();
+		ma[0][2] = coor02;
+		
+		System.out.println("Ingrese valor para 1,0");
+		coor10 = leer.nextInt();
+		ma[1][0] = coor10;
+		
+		System.out.println("Ingrese valor para 1,1");
+		coor11 = leer.nextInt();
+		ma[1][1] = coor11;
+
+		System.out.println("Ingrese valor para 1,2");
+		coor12 = leer.nextInt();
+		ma[1][2] = coor12;
+		
+		System.out.println("Ingrese valor para 2,0");
+		coor20 = leer.nextInt();
+		ma[2][0] = coor20;
+		
+		System.out.println("Ingrese valor para 2,1");
+		coor21 = leer.nextInt();
+		ma[2][1] = coor21;
+		
+		System.out.println("Ingrese valor para 2,2");
+		coor22 = leer.nextInt();
+		ma[2][2] = coor22;
+		
+		System.out.println("Su matriz es: ");
+		System.out.print(ma[0][0]);
+		System.out.print(ma[0][1]);
+		System.out.println(ma[0][2]);
+		System.out.print(ma[1][0]);
+		System.out.print(ma[1][1]);
+		System.out.println(ma[1][2]);
+		System.out.print(ma[2][0]);
+		System.out.print(ma[2][1]);
+		System.out.println(ma[2][2]);
+
+		
+	}
+
+}
+
