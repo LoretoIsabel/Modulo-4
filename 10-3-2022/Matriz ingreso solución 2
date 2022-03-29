@@ -1,0 +1,34 @@
+package matrices;
+
+import java.util.Scanner;
+
+public class matrizIngresoSolucion2 {
+
+	public static void main(String[] args) {
+		Scanner leer = new Scanner(System.in);
+		int largoFila, largoColumna;
+
+		System.out.println("Ingrese el largo de la fila: ");
+		largoFila = leer.nextInt();
+
+		System.out.println("Ingrese el largo de la columna: ");
+		largoColumna = leer.nextInt();
+
+		int ma[][] = new int[largoFila][largoColumna];
+
+		for(int fila=0; fila<largoFila; fila++) {
+		for(int columna=0; columna<largoColumna; columna++) {
+			ma[fila][columna] = 1;
+			}
+		}
+
+		for(int fila=0; fila<largoFila; fila++) {
+		for(int columna=0; columna<largoColumna; columna++) {
+		System.out.print(ma[fila][columna]);
+		}
+		System.out.println();
+		}
+
+		}
+	}
+
