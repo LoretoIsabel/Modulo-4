@@ -1,0 +1,50 @@
+package matrices;
+
+import java.util.Scanner;
+
+public class EjercicioMatriz {
+
+	public static void main(String[] args) {
+		Scanner leer = new Scanner(System.in);
+		int ma[][] = new int[6][6];
+		
+		System.out.println("Ejercicio diagonal en 1 automático");
+		System.out.println();
+
+		for(int fila=0; fila<6;fila++) {
+			for(int columna=0; columna<6; columna++) {
+				ma[fila][columna] = 0;
+				if(columna + fila ==5) {
+					ma[fila][columna]=1;
+				}
+			}
+		}
+		for(int fila=0; fila<6; fila++) {
+			for(int columna=0; columna<6; columna++) {
+				System.out.print(ma[fila][columna]);
+				if(columna==5) {
+				System.out.println();
+			}
+		}
+	} 		
+		System.out.println();
+		System.out.println("Ejercicio diagonal inversa en 1 automático");
+		System.out.println();
+		for(int fila=0; fila<6;fila++) {
+			for(int columna=0; columna<6; columna++) {
+				ma[fila][columna] = 0;
+				if(columna == fila) {
+					ma[fila][columna]=1;
+				}
+			}
+		}
+		for(int fila=0; fila<6; fila++) {
+			for(int columna=0; columna<6; columna++) {
+				System.out.print(ma[fila][columna]);
+				if(columna==5) {
+				System.out.println();
+			}
+		}
+	} 		
+}
+}
